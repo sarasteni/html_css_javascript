@@ -1,0 +1,59 @@
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+a {
+    color: #0A246A;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #20dd7e;
+
+}
+
+a:active {
+    color: #ca0ad8;;
+}
+
+figure {
+    background-color: #000000;
+}
+
+figcaption {
+    color: #ffffff;
+    padding: 2rem;
+    opacity: 0;
+    transition: opacity 500ms ease-in-out, padding 300ms ease-in-out;
+    transition-delay: 1000ms;
+}
+
+figure:hover figcaption {
+    opacity: 1;
+    padding: 2rem;
+}
+
+figure:hover img {
+    opacity: 1;
+    transition: opacity 300ms ease-in-out, padding 300ms ease-in-out;
+}
+
+header {
+    background-color: #dddddd;
+    padding: 3rem 2 rem;
+}
+
+header p {
+    height: 0;
+    overflow: hidden;
+    transition: height 300ms linear;
+}
+
+header:hover p {
+    display: block;
+    height: 100px;
+}
+

@@ -1,0 +1,77 @@
+/* Einheiten "em" vs. "rem" 
+    em => multipliziert den Wert um den jeweiligen Faktor
+    --  in unserem Beispiel wird im HTML 16px gesetzt
+        die h2 auf 2em (bedeutet das 2-Fache der größe)
+        die section auf 1.5em (bedeutet alle Child-Elemente (nur Text) werden auf 1,5-Fache vergrößert)
+        h2 innerhalb der section wird daher von 16px (html) mit 1.5 (1.5em section) und dann mit 2 (2em h2) multipliziert
+    
+    rem => bezieht sich immer auf Knotenpunkt (HTML-Tag)
+    --  in unserem Beispiel ist die H3 immer 2rem (2-Fache des HTML-Werts)
+*/
+
+html {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+section {
+    font-size: 1.5em;
+}
+
+/* Weitere Maßeinheiten */
+.beispiele {
+    font-size: 70%;
+    width: 100vw;
+    height: 100vh;
+}
+
+/** Link mit Pseudoklassen
+Achtung: Reihenfolge beachten */
+/* allgemeine Link Styles  */
+a {
+   color: #20dd7e;
+}
+/* besuchter Link */
+a:visited {
+    color: #ae20dd;
+}
+
+/* Hover (Mouse over) */
+a:hover {
+    color: #209bdd;
+}
+
+a:visited:hover {
+    color: #1e1917;
+}
+
+/* Klick */
+a:active {
+    color: #dda120;
+}
+
+
+/* mit "!important" können inline-styles überschrieben werden und
+regeln, die an einer anderen Stelle spezifischer gesetzt sind */
+.home-link {
+    color: #000000 !important;
+}
+
+#section .test {
+    background-color: #ff0000;
+}
+
+.test {
+    background-color: #000000 !important;
+}

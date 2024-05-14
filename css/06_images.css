@@ -1,0 +1,130 @@
+body {
+    background-color: #eee; /* Hintergrund-Farbe */
+    background-image: url("../img/bg-pattern.jpg"); /* Hintergrundbild (default: wird wiederholt) */
+    background-size: 50px; /* Größe der Hintergrund-Grafik anpassen (alle Größeneinheiten erlaubt) */
+}
+
+/*  Standard-Regeln für responsive Images: */
+.responsive-image,
+img {
+    max-width: 100%; /* passt sich an die Breite an, wird aber max. 100% der Datei-/Bildgröße breit */
+    height: auto; /* Höhe passt sich proportional an */
+    vertical-align: bottom; /* Bilder sind Inline-Elemente und verhalten sich daher wie Text (Line-Height). Um den (Zeilen)Abstand zu verhindern */
+}
+
+.image-rounded{
+    border-radius: 30px 50px;
+    margin: 50px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    /* box-shadow: X-Versatz Y-Versatz Blur Farbe */
+    max-height: 100px;
+    width: auto;
+    max-width: unset;
+}
+
+.round {
+    border-radius: 50%;
+    aspect-ratio: 1; /* Seitenverhältnis !Achtung benötigt immer eine Größenangabe */
+}
+
+.aspect-ratio {
+    aspect-ratio: 2 / 3;
+    object-fit: cover; /* Bild in dem Bildausschnitt (2:3) füllend darstellen */
+    background-color: #f00;
+}
+
+.shadow {
+    box-shadow: inset 10px 10px 5px rgba(20,20,45,.5), 5px 5px 5px #ca0ad8, -5px -5px 5px #1d651d, 10px -10px 5px #d8970a;
+    opacity: 0.7; /* Element mit allen Kind-Elementen transparent. 0.7 = 70% Deckend */
+}
+
+.responsive-image img {
+    filter: sepia(30%) blur(3px); /* Bild-Filter */
+}
+
+/* Anpassen von SVG-Elementen, die als Tags eingefügt wurden */
+svg:hover .color-1 path {
+    fill: lime !important; /* fill = Pfad-Füllfarbe */
+}
+svg:hover .color-2 path {
+    fill: #1d2d7c !important;
+}
+
+.header {
+    padding: 5rem 2rem;
+    /*
+    background-image: url('../img/notebook.webp');
+    background-repeat: no-repeat;
+    background-position: 70% 30%;
+     */
+    /* background: kann mehrere Eigenschaften zusammenfassen (image, repeat, color, position, attachment) */
+    background: url('../img/notebook.webp') no-repeat 70% 30% #d8970a fixed;
+    background-size: cover;
+    min-height: 50vh;
+}
+
+.header {
+    /* font-size: 6vw; */
+    font-size: clamp(2em, 8vw, 70px); /* clamp(min, val, max) */
+}
+
+.box {
+    height: 50vh;
+    margin: 50px 0;
+    border: 2px solid #000;
+}
+
+/* Gradients */
+.gradient-1 {
+    background: linear-gradient(
+            to bottom,
+            rgb(0,0,0) 0,
+            rgb(0,0,255) 25%,
+            rgb(255,0,0) 50%,
+            rgb(255,255,0) 75%,
+            rgb(0,255,0) 100%
+    );
+}
+
+.gradient-2 {
+    background: radial-gradient(
+            circle farthest-side at top left,
+            rgb(0,0,0) 0,
+            rgb(255,0,0) 50%,
+            rgb(0,255,0) 100%
+    );
+}
+
+.gradient-3 {
+    background: repeating-radial-gradient(
+            circle farthest-side at top right,
+            rgb(0,0,0) 0,
+            rgb(255,0,0) 25%,
+            rgb(0,255,0) 50%
+    ) fixed;
+}
+
+.gradient-4 {
+    background: linear-gradient(
+            to bottom,
+            rgba(0,0,0,0) 50%,
+            rgba(0,0,0,100) 90%
+    );
+}
+
+.infobox {
+    background: url("../img/mountain-7775867_1920.jpg") no-repeat center center fixed;
+    padding: 20vh 10vw;
+    margin: 30vh 0;
+    box-shadow: inset 0 0 12px rgba(0,0,0,0.4);
+}
+
+/* Backdrop-Filter */
+.infobox .info {
+    padding: 4rem 1rem;
+    text-align: center;
+    font-size: clamp(2.5em, 8vw, 100px);
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(3px);
+    border-radius: 12px;
+}

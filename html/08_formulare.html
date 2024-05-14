@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Formulare</title>
+</head>
+
+<body>
+<a href="../index.html">Zur Startseite</a>
+<h1>Formulare</h1>
+<!-- Form-Tag mit Attributen "method" (get / post) und "action" (was soll bei "submit" ausgeführt werden) -->
+<form method="get" action="#">
+    <fieldset>
+        <legend>Personenbezogene Daten</legend>
+
+        <!-- Radio Buttons -->
+        <input type="radio" name="anrede" value="Frau" id="frau">
+        <label for="frau">Frau</label>
+
+        <input type="radio" name="anrede" value="Herr" id="herr">
+        <label for="herr">Herr</label>
+
+        <input type="radio" name="anrede" value="Firma" id="firma">
+        <label for="firma">Firma</label>
+
+        <!-- Texteingaben -->
+        <div>
+            <label for="vorname">Vorname:</label>
+            <input type="text" name="vorname" id="vorname" tabindex="1" placeholder="Ihr Vorname">
+        </div>
+        <div>
+            <label for="nachname">Nachname:</label>
+            <input type="text" name="nachname" id="nachname" tabindex="4">
+        </div>
+        <div>
+            <label for="plz">PLZ:</label>
+            <!--
+            <input type="text" name="plz" id="plz" tabindex="2" maxlength="5" size="5">
+            -->
+            <input type="number" id="plz" name="plz" tabindex="2" min="1000" max="9999" size="4">
+        </div>
+        <div>
+            <label for="ort">Ort:</label>
+            <input type="text" name="ort" id="ort" tabindex="5">
+        </div>
+        <div>
+            <label for="land">Land:</label>
+            <input type="text" name="land" id="land" tabindex="3" value="Österreich" readonly>
+        </div>
+        <!-- Telefonnummer -->
+        <div>
+            <label for="telefon">Telefonnummer:</label>
+            <input type="tel" name="telefon" id="telefon" placeholder="0664/">
+        </div>
+        <!-- Url -->
+        <div>
+            <label for="website">Ihre Internet-Adresse:</label>
+            <input type="url" name="website" id="website" value="https://">
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Sensible Daten</legend>
+        <div>
+            <!-- Schritte / Stufen die eingegeben werden dürfen, Mindestwert, Maximalwert -->
+            <label for="size">Körpergröße</label>
+            <input type="number" id="size" step="0.5" min="100" max="220" value="175">cm
+        </div>
+        <div>
+            <!-- Schieberegler -->
+            <label for="range">Schieberegler</label>
+            <input type="range" name="schieberegler" id="range" min="0" max="100" value="30">
+        </div>
+        <div>
+            <!-- Datumseingabe -->
+            <label for="birthday">Geburtsdatum</label>
+            <input type="date" name="geburtsdatum" id="birthday">
+        </div>
+        <div>
+            <!-- Uhrzeit -->
+            <label for="time">Uhrzeit</label>
+            <input type="time" name="uhrzeit" id="time">
+        </div>
+        <div>
+            <input type="checkbox" name="datenschutz" id="dsgvo" checked="checked">
+            <label for="dsgvo">Hiermit bestätigen Sie vollautomatisch unsere DSGVO</label>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Login</legend>
+        <p>Bitte loggen Sie sich hier ein. Ihre Daten sind hier sicher :-)</p>
+        <!-- Email -->
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="E-Mail Adrsse" required>
+        </div>
+        <div>
+            <!-- Passwort. Wir verhindern mit autocomplete=off, dass die Nutzereingabe für Passwort beim nächsten Mal nicht speichert und vorausgefüllt ist -->
+            <label for="password">Passwort</label>
+            <input type="password" name="password" id="password" required placeholder="Kundekennwort" size="20"
+                   maxlength="30" autocomplete="off">
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Weitere Felder</legend>
+        <div>
+            <!-- Search Typ -->
+            <label for="search">:Suche</label>
+            <input type="search" id="search" name="s">
+        </div>
+        <div>
+            <!-- Search Typ mit Liste-->
+            <label for="search-list">Bitte geben Sie Ihren Lieblingsvogel an:</label>
+            <input type="search" id="search-list" list="vogel" name="list">
+            <datalist id="vogel">
+                <option value="Amsel"></option>
+                <option value="Buntspecht"></option>
+                <option value="Drossel"></option>
+                <option value="Eisvogel"></option>
+                <option value="Papagei"></option>
+                <option value="Specht"></option>
+            </datalist>
+        </div>
+        <!-- Verstecktes Element (benötigen kein label) -->
+        <input type="hidden" name="ipadresse" value="192.168.8.1">
+        <div>
+            <!-- Datei-Upload -->
+            <label for="upload">Datei hochladen</label>
+            <input type="file" name="datei" id="upload">
+        </div>
+        <div>
+            <!-- Mehrere Dateien hochladen (name ist ein Array)-->
+            <label for="multi-upload">Dateien hochladen</label>
+            <input type="file" id="multi-upload" multiple name="datei[]">
+        </div>
+        <div>
+            <!-- Farbwähler -->
+            <label for="color">Farbe</label>
+            <input type="color" id="color" name="farbwahl" value="#FF0000">
+        </div>
+        <div>
+            <!-- Mehrzeiliges Textelement mit 5 Zeilen und 60 als Spaltenbreite -->
+            <label for="message">Nachricht</label>
+            <textarea id="message" name="nachricht" rows="8" cols="60"></textarea>
+        </div>
+
+        <div>
+            <!-- Auswahllisten -->
+            <label for="select">Künstler</label>
+            <select name="kuenstler" id="select">
+                <option value="1">Michael Jackson</option>
+                <option value="2" selected>Nina Hagen</option>
+                <option value="3">Heino</option>
+                <option value="4">Eminem</option>
+            </select>
+        </div>
+        <div>
+            <!-- Listenmenü mit Mehrfachauswahl -->
+            <label for="multi-select">Künstler</label>
+            <select name="kuenstler2" id="multi-select" multiple size="4">
+                <option selected>Michael Jackson</option>
+                <option>Nina Hagen</option>
+                <option selected>Heino</option>
+                <option>Eminem</option>
+            </select>
+        </div>
+
+        <p>Schaltflächen und Buttons</p>
+        <!-- Absenden-Button -->
+        <input type="submit" value="Absenden" disabled>
+        <button type="submit">Jetzt absenden</button>
+
+        <!-- Zurücksetz-Button -->
+        <input type="reset" value="Zurücksetzen">
+        <button type="reset">Formular leeren</button>
+    </fieldset>
+</form>
+</body>
+
+</html>

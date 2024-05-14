@@ -1,0 +1,22 @@
+.box {
+    background-color: #888;
+
+    /*
+    padding: 20px;                  --> alle Seiten
+    padding: 10px 20px;             --> 10px oben/unten, 20px links/rechts
+    padding: 10px 20px 30px;        --> 10px oben, 20px links/rechts, 30px unten
+    padding: 10px 20px 30px 40px;   --> 10px oben, 20px rechts, 30px unten, 40px links
+    */
+    padding: 20px;
+    width: 400px;
+    border: 3px solid black;
+    margin: 10px;
+}
+
+#box2 .box{
+    box-sizing: border-box;
+}
+
+#box3 .box {
+    box-sizing: content-box;
+}

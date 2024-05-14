@@ -1,0 +1,31 @@
+/* Text-Ausrichtung mit Text-Align */
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Achtung: Blocksatz funktioniert (noch) nicht so wie im Print */
+.text-justify {
+    text-align: justify;
+}
+
+/* Ausrichten von Block-Elementen mit Margin */
+.box {
+    max-width: 400px;
+    background-color: #ddd;
+    margin-left: auto;
+}
+
+.box-center {
+    /* margin-right: auto; */
+    background-color: #ddd;
+    margin: 50px auto;
+    width: 400px;
+}

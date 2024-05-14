@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Grundlagen</title>
+    <!-- CSS aus externer Datei laden -->
+    <link rel="stylesheet" href="01_grundlagen.css">
+
+    <!-- CSS im Dokument als Style-Tag -->
+    <style>
+        h1,
+        h2,
+        h3 {
+            color: #272780;
+        }
+
+        .headline {
+            color: green;
+            background-color: #dddddd;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: red;
+        }
+
+        #error {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<!-- CSS per Attribut "style" als sogenanntes Inline-Style -->
+<a class="home-link" href="../index.html" style="color:brown">Zur Startseite</a>
+
+<h1>CSS Grundlagen</h1>
+<p>orem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+    natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+    pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
+    vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+
+<h2>Headline 2</h2>
+<p>orem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+    natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+    pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
+    vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+
+<h2 class="headline">Headline 2 mit einer Klasse</h2>
+<p>orem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+    natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+    pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
+    vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+
+<h3>Headline 3</h3>
+<p>orem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+    natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+    pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
+    vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+
+<h3 class="headline" id="error">Headline 3</h3>
+<p>orem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+    natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+    pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
+    vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+
+<section id="section">
+    <h2>Headline in Section (2em)</h2>
+    <h3>Headline 3 in Section (2rem)</h3>
+    <div class="test">BOX</div>
+</section>
+<ul>
+    <li>
+        <a href="https://wifionline.at/" target="_blank">Link zur WIFI Website</a>
+    </li>
+    <li>
+        <a href="https://www.google.at/" target="_blank">Link zu Google</a>
+    </li>
+    <li>
+        <a href="https://youtube.com/" target="_blank">Link zu YouTube</a>
+    </li>
+</ul>
+</body>
+</html>
