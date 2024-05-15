@@ -1,6 +1,6 @@
 body {
     background-color: #eee; /* Hintergrund-Farbe */
-    background-image: url("../img/bg-pattern.jpg"); /* Hintergrundbild (default: wird wiederholt) */
+    background-image: url("../img"); /* Hintergrundbild (default: wird wiederholt) */
     background-size: 50px; /* Größe der Hintergrund-Grafik anpassen (alle Größeneinheiten erlaubt) */
 }
 

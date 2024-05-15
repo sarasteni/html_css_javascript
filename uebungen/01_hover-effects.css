@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+.image-holder {
+    max-width: 500px;
+    margin: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.caption {
+    position: absolute;
+}
+
+#effect-1 .caption {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0, .9);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.4s linear;
+}
+
+#effect-1:hover .caption {
+    opacity: 1;
+}
+
+#effect-2 .caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0, .9);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.4s linear;
+}
+
+#effect-2:hover .caption {
+    opacity: 1;
+}
+
+#effect-3 .caption{
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, .9);
+    text-align: center;
+    color: #f8f8f8;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.4s linear;
+}
+
+#effect-3:hover img{
+    filter: grayscale(80%);
+}
+
+#effect-3:hover .caption {
+    opacity: 1;
+}
+
+.image-holder {
+    overflow: hidden;
+}
+
+#effect-4 .caption {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(100%);
+    background-color: rgba(0, 0, 0, .9);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.4s linear, transform 0.4s ease-in-out;
+}
+
+#effect-4:hover .caption {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#effect-5 .caption {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: scale(0);
+    background-color: rgba(0, 0, 0, .9);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    opacity: 1;
+    transition: opacity 0.4s linear, transform 0.4s ease-in-out;
+}
+
+#effect-5:hover .caption {
+    opacity: 1;
+    transform: scale(1);
+}
+
+#effect-6 .caption {
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    background-color: rgba(0, 0, 0, .9);
+    text-align: center;
+    color: #f8f8f8;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+#effect-6:hover .caption {
+    opacity: 1;
+}
+
+#effect::before,
+#effect::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+

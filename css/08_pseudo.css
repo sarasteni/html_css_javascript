@@ -36,7 +36,7 @@ a:focus-visible {
     border-top: 1px solid #000;
 }
 
-.menu li;nth-child(even) {
+.menu li:nth-child(even) {
     background-color: #20dd7e;
 }
 

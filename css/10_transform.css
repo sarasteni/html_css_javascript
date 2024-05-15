@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    background-color: #20dd7e;
+}
+
+#box-1 {
+    transform: translateX(20px);
+}
+
+#box-2 {
+    transform: rotate(30deg);
+}
+
+#box-3 {
+    transform: scale(0.5);
+}
+
+#box-4 {
+    transform: translateX(100%) scale(1.2);
+}
+
+#box-5 {
+    transform: scale(1.2) translateX(100%);
+}
+
