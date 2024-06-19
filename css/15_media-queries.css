@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: bisque;
+}
+
+@media screen and (min-width: 400px) {
+    body{
+        background-color: blue;
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 650px) {
+    body {
+        color: #fff;
+    }
+}
+
+@media screen and (min-width: 144opx){
+    body {
+        background-color: violet;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    body{
+        font-size: .7em;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    h1::after {
+        content: "(Portrait)";
+    }
+}
+
+
+@media screen and (orientation: landscape) {
+    h1::after {
+        content: "(landscape)";
+    }
+}
+
+@media print {
+    *,
+    *::before,
+    *::after {
+        background: transparent;
+        color: black;
+    }
+
+    a::after {
+        content: " (" attr(href) ")";
+    }
+}
+
+

@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+.h1{
+    text-align: center;
+}
+.container{
+    display: flex;
+}
+
+.container1{
+    display: flex;
+    background-color: red;
+    border: 1px solid #000000;
+    padding: 2em;
+    justify-content: left;
+}
+
+.container2{
+    display: flex;
+    background-color: #0A246A;
+    border: 1px solid #000000;
+    padding: 2em;
+    justify-content: right;
+}
+
+.content{
+
+}

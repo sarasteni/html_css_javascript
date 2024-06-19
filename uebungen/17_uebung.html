@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruppenübung KW 24</title>
+    <link rel="stylesheet" href="17_uebung_normalize.css">
+    <link rel="stylesheet" href="17_uebung.css">
+</head>
+<body>
+<nav id="nav-main">
+    <div id="brand">
+        <a href="/">
+            <img src="../img/logo.svg" alt="Logo">
+        </a>
+    </div>
+    <!-- Burger Button -->
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" id="menu-button">
+        <span id="menu-button-icon"></span>
+    </label>
+
+    <ul id="main-menu">
+        <li>
+            <a href="/">Home</a>
+        </li>
+        <li class="current-menu-parent">
+            <a href="#">Leistungen</a>
+            <ul class="sub-menu">
+                <li>
+                    <a href="#">Coding</a>
+                </li>
+                <li class="current-menu-item">
+                    <a href="#">Design</a>
+                </li>
+                <li>
+                    <a href="#">Schulungen</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Über Uns</a>
+        </li>
+        <li>
+            <a href="#">Kontakt</a>
+        </li>
+    </ul>
+
+</nav>
+<main>
+    <div class="hero">
+        <div class="content-wrapper container">
+            <div class="content">
+                <h1>
+                    Hero-Heading
+                </h1>
+                <p class="is-like-h3">Lorem Ipsum Dolor sit amet</p>
+                <a href="#" class="btn">
+                    Hero-Button
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- section + container-class kombiniert |
+    | ACHTUNG! bei Hintergrundfarben oder Dinge die bis zum Rand gehen sollen -->
+    <section class="teaser-section container">
+        <div class="large-teaser overlay" style="background-image: url('../img/css-code.jpg')">
+            <h2>Alles Aktuelle lesen sie Hier</h2>
+            <a href="#" class="btn">Mehr erfahren</a>
+        </div>
+        <div class="teaser-grid">
+            <div class="teaser-item">
+                <img src="../img/mountain-7775867_1920.jpg" alt="berge">
+                <div class="content">
+                    <h3>Lorem Ipsum Dolor sit Amet</h3>
+                    <a href="#" class="btn">Mehr erfahren</a>
+                </div>
+            </div>
+            <div class="teaser-item">
+                <img src="../img/mountain-7775867_1920.jpg" alt="berge">
+                <div class="content">
+                    <h3>Lorem Ipsum Dolor sit Amet</h3>
+                    <a href="#" class="btn">Mehr erfahren</a>
+                </div>
+            </div>
+            <div class="teaser-item">
+                <img src="../img/mountain-7775867_1920.jpg" alt="berge">
+                <div class="content">
+                    <h3>Lorem Ipsum Dolor sit Amet</h3>
+                    <a href="#" class="btn">Mehr erfahren</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section > container -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="large-image">
+                <img src="../img/vogl.png" alt="vogl">
+            </div>
+
+            <div class="cta">
+                <img src="../img/vogl_2.jpg" alt="vogl2">
+                <div class="content">
+                    <h2>Jetzt zuschlagen</h2>
+                    <a href="#" class="btn"> Hier geht's zum Angebot</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="icon-section container">
+        <h2>Icon Section</h2>
+        <p>
+            I'm baby retro forage activated charcoal pickled. Cornhole sriracha DIY mukbang. Authentic pok pok
+            chicharrones tattooed vice hell of. JOMO neutra meh literally vexillologist lyft flexitarian pour-over.
+            Polaroid viral +1 pickled, taiyaki occupy hexagon pug readymade tonx bruh messenger bag godard. Tonx
+            sustainable banjo bicycle rights mixtape air plant venmo PBR&B normcore blue bottle, cronut banh mi man bun
+            mumblecore vice.
+        </p>
+        <div class="icon-grid">
+            <div class="icon-item">
+                <a href="#">
+                    <span class="icon-mug" aria-hidden="true"></span>
+                </a>
+                <img src="../img/plakatwand.png" alt="plakatwand">
+            </div>
+            <div class="icon-item">
+                <a href="#">
+                    <span class="icon-steam" aria-hidden="true"></span>
+                </a>
+                <img src="../img/plakatwand.png" alt="plakatwand">
+            </div>
+            <div class="icon-item">
+                <a href="#">
+                    <span class="icon-floppy-disk" aria-hidden="true"></span>
+                </a>
+                <img src="../img/plakatwand.png" alt="plakatwand">
+            </div>
+        </div>
+    </section>
+
+    <section class="pagination-section">
+        <div class="container">
+            <h2>Pagination Section</h2>
+            <p>
+                I'm baby retro forage activated charcoal pickled. Cornhole sriracha DIY mukbang. Authentic pok pok
+                chicharrones tattooed vice hell of. JOMO neutra meh literally vexillologist lyft flexitarian pour-over.
+                Polaroid viral +1 pickled, taiyaki occupy hexagon pug readymade tonx bruh messenger bag godard. Tonx
+                sustainable banjo bicycle rights mixtape air plant venmo PBR&B normcore blue bottle, cronut banh mi man
+                bun mumblecore vice.
+
+                Freegan vaporware polaroid, XOXO migas fit actually ennui marxism locavore pok pok tousled pop-up la
+                croix. Flexitarian locavore before they sold out gastropub hexagon, neutral milk hotel venmo poutine
+                street art. Distillery la croix asymmetrical forage leggings DIY. Pug tote bag tumblr bitters, kinfolk
+                bushwick ethical. Actually flexitarian sriracha, narwhal fit organic cronut. Ascot yr godard four loko,
+                brunch organic neutral milk hotel.
+            </p>
+
+            <div class="item-grid">
+                <div class="item">
+                    <img src="../img/js-code.jpg" alt="code">
+                    <h3>Titel</h3>
+                </div>
+                <div class="item">
+                    <img src="../img/js-code.jpg" alt="code">
+                    <h3>Titel</h3>
+                </div>
+            </div>
+
+            <nav class="pagination">
+                <a href="#" class="prev">
+                    <span class="icon-arrow-left2" role="img" aria-label="Vorherige Seite"></span>
+                </a>
+                <a href="#">1</a>
+                <span class="current">2</span>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#" class="next">
+                    <span class="icon-arrow-right2" role="img" aria-label="Nächste Seite"></span>
+                </a>
+            </nav>
+        </div>
+    </section>
+
+    <section class="offset-img container">
+        <div class="img-wrapper item">
+            <img src="../img/maarten-deckers-YDNvydD1jAY-unsplash.jpg" alt="bleaml">
+        </div>
+
+        <div class="content item">
+            <p>
+                I'm baby retro forage activated charcoal pickled. Cornhole sriracha DIY mukbang. Authentic pok pok
+                chicharrones tattooed vice hell of. JOMO neutra meh literally vexillologist lyft flexitarian pour-over.
+                Polaroid viral +1 pickled, taiyaki occupy hexagon pug readymade tonx bruh messenger bag godard. Tonx
+                sustainable banjo bicycle rights mixtape air plant venmo PBR&B normcore blue bottle, cronut banh mi man
+                bun mumblecore vice.
+            </p>
+        </div>
+    </section>
+
+    <section class="button-block">
+        <div class="container">
+            <h2>Bild-Button Block</h2>
+            <div class="wrapper">
+                <div class="item">
+                    <img src="../img/vogl_2.jpg" alt="vogl">
+                    <a href="#" class="btn">Mehr erfahren</a>
+                </div>
+                <div class="item reverse">
+                    <img src="../img/vogl.png" alt="vogl">
+                    <a href="#" class="btn">Mehr erfahren</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="three-col-layout container">
+        <h2>3 Spalten Grid-Layout</h2>
+        <div class="grid">
+            <div class="item">
+                <p>
+                    I'm baby retro forage activated charcoal pickled. Cornhole sriracha DIY mukbang. Authentic pok pok
+                    chicharrones tattooed vice hell of.
+                </p>
+                <img src="../img/maarten-deckers-YDNvydD1jAY-unsplash.jpg" alt="blume">
+            </div>
+            <div class="item">
+                <p>
+                    I'm baby retro forage activated charcoal pickled. Cornhole sriracha DIY mukbang. Authentic pok pok
+                    chicharrones tattooed vice hell of.
+                </p>
+                <p>
+                    I'm baby retro forage activated charcoal pickled. Cornhole sriracha DIY mukbang. Authentic pok pok
+                    chicharrones tattooed vice hell of.
+                </p>
+                <p>
+                    I'm baby retro forage activated charcoal pickled. Cornhole sriracha DIY mukbang. Authentic pok pok
+                    chicharrones tattooed vice hell of.
+                </p>
+            </div>
+            <div class="item">
+                <img src="../img/maarten-deckers-YDNvydD1jAY-unsplash.jpg" alt="blume">
+                <p>
+                    I'm baby retro forage activated charcoal pickled. Cornhole sriracha DIY mukbang. Authentic pok pok
+                    chicharrones tattooed vice hell of.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-grid">
+        <div class="container">
+            <div class="grid">
+                <div class="item main-item">
+                    <h2>Flex-Grid Container</h2>
+                    <p>I'm baby retro forage activated charcoal pickled. Cornhole sriracha DIY mukbang. Authentic pok
+                        pok
+                        chicharrones tattooed vice hell of. I'm baby retro forage activated charcoal pickled. Cornhole
+                        sriracha DIY mukbang. Authentic pok pok
+                        chicharrones tattooed vice hell of.
+                    </p>
+                    <div class="advantages">
+                        <div class="single">
+                            <span class="icon-mug" aria-hidden="true"></span>
+                            <p>Hier kommt noch etwas text</p>
+                        </div>
+                        <div class="single">
+                            <span class="icon-phone" aria-hidden="true"></span>
+                            <p>Hier kommt noch etwas text</p>
+                        </div>
+                        <div class="single">
+                            <span class="icon-copy" aria-hidden="true"></span>
+                            <p>Hier kommt noch etwas text</p>
+                        </div>
+                        <div class="single">
+                            <span class="icon-grin" aria-hidden="true"></span>
+                            <p>Hier kommt noch etwas text</p>
+                        </div>
+                    </div>
+                    <div class="end">
+                        <img src="../img/html-code.jpg" alt="code">
+                        <p class="is-like-h3">Lorem Ipsum Dolor sit Amet</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../img/vogl_2.jpg" alt="vogl2" class="single-img">
+                </div>
+                <div class="item">
+                    <p>I'm baby retro forage activated charcoal pickled. Cornhole sriracha DIY mukbang. Authentic pok
+                        pok
+                        chicharrones tattooed vice hell of.I'm baby retro forage activated charcoal pickled. Cornhole
+                        sriracha DIY mukbang. Authentic pok pok
+                        chicharrones tattooed vice hell of.
+                    </p>
+                    <a href="#" class="btn">Mehr erfahren</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2716.595471982933!2d15.436059777660507!3d47.08739597114693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476e359230e03bdf%3A0x2ada0b7bb303a4d!2sWIFI%20Steiermark!5e0!3m2!1sde!2sat!4v1718220444913!5m2!1sde!2sat"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="footer">
+        © webdev 2024
+    </div>
+
+</main>
+</body>
+</html>

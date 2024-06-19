@@ -1,0 +1,96 @@
+*,
+*:after,
+*:before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    line-height: 1.4;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: url(../img/taubis.jpeg) no-repeat center / cover;
+    background-position: clamp(100%, 10vw, 60%);
+
+    /* &::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(255,255,255, .5));
+    } */
+}
+
+.hero-content{
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /*
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px */
+}
+
+.overlay{
+    /* &::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(255,255,255, .5));
+} */
+
+    /*border-width: 10px;
+    border-style: solid;
+    border-image-source: linear-gradient(rgba(255,0,0, .5),rgba(0,0,255, .5));
+    border-image-slice: fill 1;
+    */
+
+    border-image: fill 1 linear-gradient(rgba(255,0,0, .5),rgba(0,0,255, .5));
+}
+
+
+.section{
+    padding: 2rem;
+    text-align: center;
+}
+
+button{
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+    font-size: 1.3rem;
+    padding: 15px 50px;
+    border-radius: 50px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

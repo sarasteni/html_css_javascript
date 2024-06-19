@@ -1,0 +1,303 @@
+/* CSS-Variablen */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+    --header-footer-background: #333;
+    --header-footer-text: white;
+    --font-size-h1: clamp(2rem, 2.5vw, 3rem);
+    --font-size-h2: clamp(1.5rem, 2vw, 2.5rem);
+    --font-size-h3: clamp(1.25rem, 1.5vw, 2rem);
+    --font-size-p: clamp(1rem, 1.2vw, 1.5rem);
+    --padding: 1em;
+    --margin: 1em;
+    --content-width: 90%;
+}
+
+/* Desktop spezifische Variablen */
+@media (min-width: 1024px) {
+    :root {
+        --content-width: 1280px;
+        --font-size-h1: clamp(2.5rem, 2.5vw, 4rem);
+        --font-size-h2: clamp(2rem, 2vw, 3rem);
+        --font-size-h3: clamp(1.5rem, 1.5vw, 2.5rem);
+    }
+}
+
+/* Allgemeine Stile */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.container {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+header {
+    background-color: var(--header-footer-background);
+    color: var(--header-footer-text);
+    padding: var(--padding) 0;
+    text-align: center;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            font-size: var(--font-size-h1);
+        }
+
+        nav {
+            ul {
+                list-style: none;
+                padding: 0;
+                display: flex;
+                gap: var(--margin);
+
+                a {
+                    color: var(--header-footer-text);
+                    text-decoration: none;
+                    font-size: var(--font-size-p);
+                }
+            }
+        }
+    }
+}
+
+h1 {
+    font-size: var(--font-size-h1);
+}
+
+h2 {
+    font-size: var(--font-size-h2);
+}
+
+h3 {
+    font-size: var(--font-size-h3);
+}
+
+p {
+    font-size: var(--font-size-p);
+}
+
+.hero {
+    background: url('https://via.placeholder.com/1280x600') center/cover no-repeat;
+    color: black;
+    text-align: center;
+    padding: calc(var(--padding) * 2) 0;
+    position: relative;
+
+    .hero-content {
+        background: rgba(255, 255, 255, 0.7);
+        display: inline-block;
+        padding: var(--padding);
+        max-width: 380px;
+        margin: auto;
+
+        @media screen and (min-width: 768px) {
+            max-width: 650px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            max-width: 800px;
+        }
+
+        .buttons {
+            margin-top: var(--margin);
+
+            button {
+                padding: var(--padding);
+                margin: var(--margin);
+                background-color: var(--primary-color);
+                color: white;
+                border: none;
+                cursor: pointer;
+                font-size: var(--font-size-p);
+
+                &:hover {
+                    background-color: var(--secondary-color);
+                }
+            }
+        }
+    }
+}
+
+.content-block {
+    display: flex;
+    gap: var(--margin);
+    margin: var(--margin) 0;
+
+    &.reverse {
+        flex-direction: row-reverse;
+    }
+
+    img {
+        max-width: 50%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .text {
+        flex: 1;
+        padding: var(--padding);
+    }
+}
+
+.cta {
+    background: url('https://via.placeholder.com/1280x400') center/cover no-repeat fixed;
+    color: white;
+    text-align: center;
+    padding: var(--padding) 0;
+    position: relative;
+
+    .cta-content {
+        background: rgba(0, 0, 0, 0.7);
+        display: inline-block;
+        padding: var(--padding);
+        max-width: 800px;
+        margin: auto;
+
+        button {
+            padding: var(--padding);
+            margin: var(--margin);
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: var(--font-size-p);
+
+            &:hover {
+                background-color: var(--secondary-color);
+            }
+        }
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--margin);
+
+    @media (min-width: 600px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 1024px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card {
+        background-color: white;
+        border: 1px solid var(--background-color);
+        padding: var(--padding);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        h3 {
+            margin-top: var(--margin);
+        }
+
+        p {
+            margin: var(--margin) 0;
+        }
+
+        button {
+            padding: var(--padding);
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: var(--font-size-p);
+
+            &:hover {
+                background-color: var(--secondary-color);
+            }
+        }
+    }
+}
+
+.footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: var(--margin);
+    padding: var(--padding);
+
+    div {
+        flex: 1;
+        min-width: 200px;
+
+        h4 {
+            font-size: var(--font-size-h3);
+            margin-bottom: var(--margin);
+        }
+
+        p, ul {
+            font-size: var(--font-size-p);
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+
+            a {
+                color: black;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.copyright {
+    background-color: var(--header-footer-background);
+    color: var(--header-footer-text);
+    text-align: center;
+    padding: var(--padding);
+    font-size: var(--font-size-p);
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content {
+        width: 100%;
+    }
+
+    .content-block {
+        flex-direction: column;
+
+        img {
+            max-width: 100%;
+        }
+    }
+}

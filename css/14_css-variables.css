@@ -1,0 +1,48 @@
+:root {
+    --base-bg-color: #eee;
+    --base-color: #383838;
+    --headline-color: #f0645a;
+    --primary-color: rgb(255,0,0);
+    --primary-rgb: 255, 0, 0;
+    --primary-alpha: .5;
+
+    --container-max-width: 1000px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--base-bg-color);
+    color: var(--base-color);
+
+}
+
+h1,
+h2 {
+    color: var(--headline-color);
+}
+
+p{
+    background-color: rgba(var(--primary-rgb), var(--primary-alpha));
+    color: var(--base-bg-color);
+}
+
+.post {
+    --headline-color: rgb(45, 45, 83);
+}
+
+.container {
+    max-width: var(--container-max-width);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.test-1{
+    --base-bg-color: white;
+
+}
+
+
