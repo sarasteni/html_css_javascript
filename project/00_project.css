@@ -30,17 +30,8 @@
         font-family: "Open Sans";
         font-weight: 400;
         font-style: normal;
-        src: url('./01_project_fonts/OpenSans-Bold.ttf') format('ttf');
+        src: url('./01_project_fonts/open-sans-v40-latin-regular.woff2') format('woff2');
     }
-
-    @font-face {
-        font-display: swap;
-        font-family: "Open Sans";
-        font-weight: 400;
-        font-style: normal;
-        src: url('./01_project_fonts/OpenSans-Regular.ttf') format('ttf');
-    }
-
 }
 
 
@@ -55,6 +46,7 @@
 body {
     padding-top: var(--nav-mobile-height);
     font-size: clamp(16px, 1vw, 20px);
+    background-color: #FBFBFB;
 
     @media screen and (min-width: 900px) {
         padding-top: var(--nav-desktop-height);
@@ -62,9 +54,9 @@ body {
 }
 
 .textarea{
-    margin-left: 150px;
-    margin-right: 150px;
-    padding: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 10px;
 }
 
 /* Font Edit */
@@ -76,6 +68,7 @@ h5,
 h6 {
     font-family: var(--primary-font);
     font-weight: 400;
+    line-height: 1;
     margin: 0 auto 1rem;
 }
 
@@ -110,6 +103,7 @@ p{
 button,
 .button,
 .btn {
+    font-family: var(--secondary-font);
     background-color: var(--accent-color);
     color: var(--primary-color);
     border: none;
@@ -170,26 +164,23 @@ img {
     right: 0;
     z-index: 9999;
     height: var(--nav-mobile-height);
-    background: transparent;
-    backdrop-filter: blur(10px);
+    background-color: white;
 
     @media screen and (min-width: 900px) {
         height: var(--nav-desktop-height);
+        background: transparent;
+        backdrop-filter: blur(10px);
     }
 
     #brand {
 
         img {
-            float: right;
-            position: relative;
-            height: 20px;
+            height: 40px;
             width: auto;
-            display: flex;
-            flex-direction: row;
-
-            @media screen and (min-width: 900px) {
-                height: auto;
-            }
+            padding-left: 10px;
+        }
+        @media screen and (min-width: 900px) {
+            padding: 80px 23px 0 23px;
         }
     }
 
@@ -204,13 +195,12 @@ img {
                 #menu-button-icon {
                     background-color: transparent;
 
-
                     &::before {
-                        transform: rotate(-45deg);
+                        transform: rotate(-30deg);
                     }
 
                     &::after {
-                        transform: rotate(30deg);
+                        transform: rotate(45deg);
                     }
                 }
             }
@@ -226,9 +216,9 @@ img {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: var(--nav-mobile-height);
-        height: var(--nav-mobile-height);
-        background-color: white;
+        width: 60px;
+        height: 60px;
+        background-color: transparent;
 
         @media screen and (min-width: 900px) {
             display: none;
@@ -244,9 +234,8 @@ img {
                 position: absolute;
                 top: 0;
                 right: 0;
-                transform:translateY(15px);
                 transition: transform 300ms linear;
-                width: 28px;
+                width: 25px;
             }
 
             &::before {
@@ -254,28 +243,35 @@ img {
                 position: absolute;
                 top: 0;
                 right: 0;
-                transform:translateX(-10px);
                 transition: transform 300ms linear;
                 width: 34px;
             }
+
+            &::before {
+                transform: translateY(-10px);
+            }
+
+            &::after {
+                transform: translateY(10px);
+            }
         }
 
-        #menu-button-icon,
         #menu-button-icon::before,
-        #menu-button-icon::after {
+        #menu-button-icon::after,
+        #menu-button-icon {
             height: 3px;
             background-color: var(--primary-color);
-            border-radius: 50px;
         }
     }
 
 
     #main-menu {
-        position: fixed;
+        position: absolute;
         top: var(--nav-mobile-height);
         left: 0;
         right: 0;
-        background-color: var(--white);
+        height: calc(100vh - var(--nav-mobile-height));
+        background-color: white;
         margin: 0;
         padding: 2em 0;
         list-style: none;
@@ -286,9 +282,9 @@ img {
         pointer-events: none;
 
         @media screen and (min-width: 900px) {
+            display: flex;
             position: static;
             opacity: 1;
-            display: flex;
             padding: 0;
             overflow-y: visible;
             background-color: transparent;
@@ -296,11 +292,16 @@ img {
         }
 
         a {
-            color: var(--white);
+            color: var(--primary-color);
             text-decoration: none;
             display: block;
             padding: 0 .5em;
             transition: color 300ms linear;
+
+            @media screen and (min-width: 900px){
+                color: var(--primary-color);
+
+            }
 
             &:hover {
                 color: var(--primary-color);
@@ -311,6 +312,8 @@ img {
 
 
             @media screen and (min-width: 900px) {
+                opacity: 1;
+                pointer-events: all;
                 position: relative;
             }
 
@@ -384,16 +387,32 @@ main {
     .main-content {
         position: relative;
         text-align: center;
-        margin: 100px 0 15px 0;
+        margin-top: 10px;
+
+        @media screen and (min-width: 900px) {
+            position: relative;
+            text-align: center;
+            margin: 100px 0 15px 0;
+        }
     }
 
     .main-content h1 {
-        font-size: 6em;
-        color: #333;
+        margin-top: 10px;
+        text-align: right;
+        font-size: 4em;
         position: relative;
-        top: 20px;
-        z-index: 2;
+        z-index: 10;
+        padding-bottom: 20px;
         text-shadow: 2px 2px 5px #FFFFFF80;
+
+        @media screen and (min-width: 900px) {
+            font-size: 6em;
+            color: #333;
+            position: relative;
+            top: 20px;
+            z-index: 15;
+            text-shadow: 2px 2px 5px #FFFFFF80;
+        }
     }
 
     .main-content img {
@@ -401,27 +420,103 @@ main {
         max-width: 1200px;
         height: auto;
         position: relative;
-        top: -30px;
+        padding-right: 15px;
+        padding-left: 15px;
+        top: -20px;
         z-index: 1;
+
+        @media screen and (min-width: 900px) {
+            width: 100%;
+            max-width: 1200px;
+            height: auto;
+            position: relative;
+            top: -30px;
+            z-index: 1;
+        }
     }
 }
+
+
+
+/* Absatz 1, Agency */
+.agency{
+    padding-bottom: 20px;
+
+
+    .agencytext {
+    margin-top: 10px;
+    text-align: left;
+    font-size: 3em;
+    position: relative;
+    padding-bottom: 20px;
+    }
+
+    .small{
+        font-size: 1.1em;
+    }
+}
+
 
 
 
 /* Absatz 2, Neon Gelber Hintergrund */
 .neonyellow{
     background-color: var(--accent-color);
+    position: relative;
+    padding-bottom: 190px;
+
+    .klein{
+        font-size: 2.3em;
+        padding-top: 20px;
+    }
+
+    .big {
+        font-size: 1.7em;
+    }
+
+    img{
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 450px;
+        padding-left: 10px;
+        padding-right: 10px;
+        z-index: 1;
+
+        @media screen and (min-width: 900px) {
+            width: 100%;
+            height: auto;
+            position: absolute;
+        }
+
+    }
 }
 
 
 
+/* Absatz 3, CTA Anfrage Button */
+
+.cta-div{
+    padding-top: 100px;
+    padding-bottom: 40px;
+
+    .klein {
+        font-size: 2.5em;
+    }
+
+    .small{
+        font-size: 1.1em;
+    }
+}
 
 
 /* Absatz 4, Reviews */
 .reviews{
     background-color: var(--secondary-color);
-}
 
+
+}
 
 
 
@@ -434,4 +529,47 @@ footer{
 }
 
 
+/* Responsive Design Anpassungen */
+@media screen and (max-width: 390px) {
+    body {
+        font-size: 14px;
+    }
 
+    .textarea {
+        margin: 0 10px;
+    }
+
+    #nav-main {
+        padding: 0 10px;
+    }
+
+    #menu-button {
+        width: 50px;
+        height: 50px;
+    }
+
+    #menu-button #menu-button-icon {
+        width: 30px;
+    }
+
+    #main-menu a {
+        font-size: 1.2em;
+    }
+
+
+    main .main-content img {
+        max-width: 100%;
+    }
+}
+
+/* Weitere Media Queries für andere Bildschirmgrößen */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .textarea {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    #nav-main {
+        padding: 0 50px;
+    }
+}
