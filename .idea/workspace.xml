@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9c6510b9-bcb0-426c-98bf-ad714132ed91" name="Changes" comment="- Projekt Sicherung">
+      <change afterPath="$PROJECT_DIR$/js/01_js_grundlagen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/02_js_datentypen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/03_js_math-operatoren.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/00_project.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/00_project.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/00_project.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/00_project.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;sarasteni&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/sarasteni/html_css_javascript.git&quot;,
+    &quot;accountId&quot;: &quot;f3b65252-6ad8-4dd0-a87c-dccdbb47be94&quot;
+  }
+}</component>
+  <component name="PhpDebugGeneral" listening_started="true" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2gTK3tQoJ5QivxXrqEzgyFa6j6b" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/sarastenitzer/Desktop/PRIVAT/WIFI KURS/html_css_javascript&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/project/01_project_fonts" />
+      <recent name="$PROJECT_DIR$/uebungen/19_vorlage-html-template/assets" />
+      <recent name="$PROJECT_DIR$/project/02_project_img" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/img/Project-Wald" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-PS-241.15989.102" />
+        <option value="bundled-php-predefined-ba97393d7c68-c76157a7178b-com.jetbrains.php.sharedIndexes-PS-241.15989.102" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9c6510b9-bcb0-426c-98bf-ad714132ed91" name="Changes" comment="" />
+      <created>1715715932301</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1715715932301</updated>
+      <workItem from="1715715933498" duration="3111000" />
+      <workItem from="1715785430663" duration="1105000" />
+      <workItem from="1715786587678" duration="24000" />
+      <workItem from="1715786795214" duration="13743000" />
+      <workItem from="1716194866766" duration="91446000" />
+      <workItem from="1717746521780" duration="14650000" />
+      <workItem from="1718645063735" duration="62124000" />
+    </task>
+    <task id="LOCAL-00001" summary="- Projekt Sicherung">
+      <option name="closed" value="true" />
+      <created>1715716081504</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715716081504</updated>
+    </task>
+    <task id="LOCAL-00002" summary="- Projekt Sicherung">
+      <option name="closed" value="true" />
+      <created>1715802497371</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715802497371</updated>
+    </task>
+    <task id="LOCAL-00003" summary="- Projekt Sicherung">
+      <option name="closed" value="true" />
+      <created>1718815614010</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718815614010</updated>
+    </task>
+    <task id="LOCAL-00004" summary="- Projekt Sicherung">
+      <option name="closed" value="true" />
+      <created>1719329340535</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1719329340535</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <MESSAGE value="- Projekt Sicherung" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Projekt Sicherung" />
+  </component>
+</project>

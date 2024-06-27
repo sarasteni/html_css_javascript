@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Datentypen</title>
+</head>
+<body>
+<h1>JavaScript Datentypen</h1>
+<p>Schau in die Konsole</p>
+<script>
+    //Datentypen
+    //Nummern
+    let number1 = 123
+    let number2 = 3.14
+    number1 = 12.54
+
+    //Boolean
+    let wahr = true //true = 1
+    let falsche = false //false = 0
+
+    //String
+    let text = 'Sara Stenitzer'
+    console.log(text)
+
+
+    //Array (listen) - Index beginnt bei 0
+    let namen = ['Max', 'Christian', 'Lisa', 'Doris', 'Mario', 12, 40]
+    console.log(namen)
+    console.log(namen[3])
+    console.log(namen.length)
+
+    //Objekte
+    let person = {
+        firstName : 'Max',
+        lastName : 'Weinstock',
+        age : 25,
+        mail : 'office@weinstock.at',
+        skills : ['HTML', 'CSS', 'JavaScript']
+    }
+
+    console.log(person.firstName + ' ' + person.lastName)
+
+    //Kleine Aufgabe: "Hallo, mein Name ist Max Weinstock. Mein Lieblings-Skill ist CSS."
+
+    console.log('Hallo, mein Name ist' + person.firstName + ' ' + person.lastName + '. Mein Lieblings-Skill ist ' + person.skills[1]);
+
+
+
+
+</script>
+</body>
+</html>
